@@ -1,0 +1,16 @@
+D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.dll
+D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.pdb
+D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.pri
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\Bundle.dll
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\Bundle.pdb
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\priconfig.xml
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\priconfig.xml.intermediate
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\layout.resfiles
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\layout.resfiles.intermediate
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\resources.resfiles
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\resources.resfiles.intermediate
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\pri.resfiles
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\pri.resfiles.intermediate
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\qualifiers.txt
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\qualifiers.txt.intermediate
+D:\GitHub\Windows-Phone-Bundle\Bundle\obj\Debug\MultipleQualifiersPerDimensionFound.txt

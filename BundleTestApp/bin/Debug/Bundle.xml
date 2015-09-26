@@ -424,5 +424,30 @@
             This message is displayed if no message was passed in the constructor
             </summary>
         </member>
+        <member name="T:Bundle_Library.TestBundleable">
+            <summary>
+            This class represents a simple object that can be packed and unpacked from a bundle.
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.TestBundleable.#ctor">
+            <summary>
+            Contructor for this object
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.TestBundleable.Bundle_Library#IBundleable#packObject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Pack this object into a bundle
+            </summary>
+            <param name="key">the key that it will be stored with in the bundle</param>
+            <param name="B"> The bundle to pack it in</param>
+        </member>
+        <member name="M:Bundle_Library.TestBundleable.Bundle_Library#IBundleable#unpackOoject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Unpack this object from the bundle
+            </summary>
+            <param name="key">the key that it was stored with in the bundle</param>
+            <param name="B">The bundle that it is packed in</param>
+            <returns> the unpacked object from the bundle</returns>
+        </member>
     </members>
 </doc>

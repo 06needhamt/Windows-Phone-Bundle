@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Bundle_Library;
 
-namespace BundleTestApp
+namespace Bundle_Library
 {
     /// <summary>
     /// This class represents a simple object that can be packed and unpacked from a bundle.

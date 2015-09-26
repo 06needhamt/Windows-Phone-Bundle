@@ -14,7 +14,7 @@ var hierarchy =
     ] ],
     [ "Bundle_Library.IBundleable", "interface_bundle___library_1_1_i_bundleable.html", [
       [ "Bundle_Library.Bundle", "class_bundle___library_1_1_bundle.html", null ],
-      [ "BundleTestApp.TestBundleable", "class_bundle_test_app_1_1_test_bundleable.html", null ]
+      [ "Bundle_Library.TestBundleable", "class_bundle___library_1_1_test_bundleable.html", null ]
     ] ],
     [ "IComponentConnector", null, [
       [ "BundleTestApp.App", "class_bundle_test_app_1_1_app.html", null ],

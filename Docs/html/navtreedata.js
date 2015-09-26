@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "Windows-Phone-Bundle", "index.html", [
-    [ "Windows-Phone-Bundle", "md__d_1__git_hub__windows-_phone-_bundle__r_e_a_d_m_e.html", null ],
+    [ "Windows-Phone-Bundle", "md__r_e_a_d_m_e.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],

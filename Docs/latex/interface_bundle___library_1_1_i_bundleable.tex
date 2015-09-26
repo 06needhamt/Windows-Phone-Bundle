@@ -1,0 +1,82 @@
+\section{Bundle\+\_\+\+Library.\+I\+Bundleable Interface Reference}
+\label{interface_bundle___library_1_1_i_bundleable}\index{Bundle\+\_\+\+Library.\+I\+Bundleable@{Bundle\+\_\+\+Library.\+I\+Bundleable}}
+
+
+This interface allows objects to be packed in bundles. Any object you want to pack in a bundle must implement this interface  
+
+
+Inheritance diagram for Bundle\+\_\+\+Library.\+I\+Bundleable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_bundle___library_1_1_i_bundleable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf pack\+Object} (string key, {\bf Bundle} B)
+\begin{DoxyCompactList}\small\item\em Pack this object into a bundle \end{DoxyCompactList}\item 
+{\bf I\+Bundleable} {\bf unpack\+Ooject} (string key, {\bf Bundle} B)
+\begin{DoxyCompactList}\small\item\em Unpack this object from the bundle \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface allows objects to be packed in bundles. Any object you want to pack in a bundle must implement this interface 
+
+
+
+\subsection{Member Function Documentation}
+\index{Bundle\+\_\+\+Library\+::\+I\+Bundleable@{Bundle\+\_\+\+Library\+::\+I\+Bundleable}!pack\+Object@{pack\+Object}}
+\index{pack\+Object@{pack\+Object}!Bundle\+\_\+\+Library\+::\+I\+Bundleable@{Bundle\+\_\+\+Library\+::\+I\+Bundleable}}
+\subsubsection[{pack\+Object(string key, Bundle B)}]{\setlength{\rightskip}{0pt plus 5cm}void Bundle\+\_\+\+Library.\+I\+Bundleable.\+pack\+Object (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{{\bf Bundle}}]{B}
+\end{DoxyParamCaption}
+)}\label{interface_bundle___library_1_1_i_bundleable_a2257f911c2ef26f1d5586923bb2e036b}
+
+
+Pack this object into a bundle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key that it will be stored with in the bundle\\
+\hline
+{\em B} & The bundle to pack it in\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf Bundle\+\_\+\+Library.\+Bundle} \doxyref{}{p.}{class_bundle___library_1_1_bundle_ad457ae404e0f33653d90ea5ed78287b4}.
+
+\index{Bundle\+\_\+\+Library\+::\+I\+Bundleable@{Bundle\+\_\+\+Library\+::\+I\+Bundleable}!unpack\+Ooject@{unpack\+Ooject}}
+\index{unpack\+Ooject@{unpack\+Ooject}!Bundle\+\_\+\+Library\+::\+I\+Bundleable@{Bundle\+\_\+\+Library\+::\+I\+Bundleable}}
+\subsubsection[{unpack\+Ooject(string key, Bundle B)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Bundleable} Bundle\+\_\+\+Library.\+I\+Bundleable.\+unpack\+Ooject (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{{\bf Bundle}}]{B}
+\end{DoxyParamCaption}
+)}\label{interface_bundle___library_1_1_i_bundleable_a9f33a8ca265623aa71e7a58fc9f398bd}
+
+
+Unpack this object from the bundle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key that it was stored with in the bundle\\
+\hline
+{\em B} & The bundle that it is packed in\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the unpacked object from the bundle
+\end{DoxyReturn}
+
+
+Implemented in {\bf Bundle\+\_\+\+Library.\+Bundle} \doxyref{}{p.}{class_bundle___library_1_1_bundle_a7be22fd964ada1161611d764ded7381d}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Bundleable.\+cs\end{DoxyCompactItemize}

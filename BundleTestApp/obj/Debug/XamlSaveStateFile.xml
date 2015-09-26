@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\github\windows-phone-bundle\bundletestapp\obj\debug\intermediatexaml\bundletestapp.exe" HashGuid="2093ea88-0b9d-32cd-27fe-96ed42e8b6d2" />
-    <ReferenceAssembly PathName="d:\github\windows-phone-bundle\bundle\bin\debug\bundle.dll" HashGuid="5fe3b865-eff9-0724-ca04-916e30a0dcda" />
+    <LocalAssembly PathName="d:\github\windows-phone-bundle\bundletestapp\obj\debug\intermediatexaml\bundletestapp.exe" HashGuid="354efdd9-6060-bc6b-2638-589e493dfc2d" />
+    <ReferenceAssembly PathName="d:\github\windows-phone-bundle\bundle\bin\debug\bundle.dll" HashGuid="06233dc8-e2d2-8b13-9d35-f464bf16cc24" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bundle</name>
+    </assembly>
+    <members>
+        <member name="T:Bundle_Library.Bundle">
+            <summary>
+            This class represents a bundle. A bundle is a collection of other objects all stored together.
+            objects within a bundle can be accessed using the key they were stored under.
+            </summary>
+        </member>
+        <member name="T:Bundle_Library.IBundleable">
+            <summary>
+            This interface allows objects to be packed in bundles. 
+            Any object you want to pack in a bundle must implement this interface
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.IBundleable.packObject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Pack this object into a bundle
+            </summary>
+            <param name="key">the key that it will be stored with in the bundle</param>
+            <param name="B"> The bundle to pack it in</param>
+        </member>
+        <member name="M:Bundle_Library.IBundleable.unpackOoject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Unpack this object from the bundle
+            </summary>
+            <param name="key">the key that it was stored with in the bundle</param>
+            <param name="B">The bundle that it is packed in</param>
+            <returns> the unpacked object from the bundle</returns>
+        </member>
+        <member name="F:Bundle_Library.Bundle.EMPTY">
+            <summary>
+            An empty bundle used to check if a bundle is empty
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.identifier">
+            <summary>
+            The passed identifier for this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.strings">
+            <summary>
+            List to hold all of the strings contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.ints">
+            <summary>
+            List to hold all of the integers contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.longs">
+            <summary>
+            List to hold all of the longs contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.floats">
+            <summary>
+            List to hold all of the floats contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.doubles">
+            <summary>
+            List to hold all of the doubels contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.bools">
+            <summary>
+            List to hold all of the booleans contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.chars">
+            <summary>
+            List to hold all of the charaters contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.bundleableObjects">
+            <summary>
+            List to hold all of the IBundleable objects contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.stringArrays">
+            <summary>
+            List to hold all of the string arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.intArrays">
+            <summary>
+            List to hold all of the integer arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.longArrays">
+            <summary>
+            List to hold all of the long arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.floatArrays">
+            <summary>
+            List to hold all of the float contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.doubleArrays">
+            <summary>
+            List to hold all of the double arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.boolArrays">
+            <summary>
+            List to hold all of the boolean arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.charArrays">
+            <summary>
+            List to hold all of the character arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.Bundle.bundleableObjectArrays">
+            <summary>
+            List to hold all of the IBundleable object arrays contained in this bundle
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.Bundle.#ctor(System.String)">
+            <summary>
+            Default contructor for this bundle
+            </summary>
+            <param name="from"> string identifier to specify where this bundle came from </param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.packObject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Pack this object into a bundle
+            </summary>
+            <param name="key">the key that it will be stored with in the bundle</param>
+            <param name="B"> The bundle to pack it in</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.unpackOoject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Unpack this object from the bundle
+            </summary>
+            <param name="key">the key that it was stored with in the bundle</param>
+            <param name="B">The bundle that it is packed in</param>
+            <returns> the unpacked object from the bundle</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putBundleable(System.String,Bundle_Library.IBundleable)">
+            <summary>
+            Package an IBundleable object into this bundle
+            </summary>
+            <param name="key">the key to store the object under</param>
+            <param name="obj">The object to package</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getBundleable(System.String)">
+            <summary>
+            Unpack an IBundleable object from this bundle
+            </summary>
+            <param name="key">The key which this object was stored under</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.storePackedObject(System.String,Bundle_Library.IBundleable)">
+            <summary>
+            Private internal method call used by the IBundleable interfaces packObject(key,obj) method
+            </summary>
+            <param name="key">the key passed to the packObject method</param>
+            <param name="obj">the onject passed to the packObject method</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getPackedObject(System.String)">
+            <summary>
+            Private internal method call used by the IBundleable interfaces unpackObject(key) method
+            </summary>
+            <param name="key">the key passed to the unpackObject method</param>
+            <returns>The unpacked object stored under the packed key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getString(System.String)">
+            <summary>
+            gets a string from this bundle
+            </summary>
+            <param name="key">The key that the string was stored under</param>
+            <returns>The string that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getInt(System.String)">
+            <summary>
+            gets a integer from this bundle
+            </summary>
+            <param name="key">The key that the integer was stored under</param>
+            <returns>The integer that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getLong(System.String)">
+            <summary>
+            gets a long from this bundle
+            </summary>
+            <param name="key">The key that the long was stored under</param>
+            <returns>The integer that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getFloat(System.String)">
+            <summary>
+            gets a float from this bundle
+            </summary>
+            <param name="key">The key that the float was stored under</param>
+            <returns>The float that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getDouble(System.String)">
+            <summary>
+            gets a double from this bundle
+            </summary>
+            <param name="key">The key that the double was stored under</param>
+            <returns>The double that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getBool(System.String)">
+            <summary>
+            gets a boolean from this bundle
+            </summary>
+            <param name="key">The key that the boolean was stored under</param>
+            <returns>The boolean that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getChar(System.String)">
+            <summary>
+            gets a character from this bundle
+            </summary>
+            <param name="key">The key that the character was stored under</param>
+            <returns>The double that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getStringArray(System.String)">
+            <summary>
+            gets a string array from this bundle
+            </summary>
+            <param name="key">The key that the string array was stored under</param>
+            <returns>The string array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getIntArray(System.String)">
+            <summary>
+            gets a integer array from this bundle
+            </summary>
+            <param name="key">The key that the integer array was stored under</param>
+            <returns>The integer array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getLongArray(System.String)">
+            <summary>
+            gets a long array from this bundle
+            </summary>
+            <param name="key">The key that the long array was stored under</param>
+            <returns>The long array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getFloatArray(System.String)">
+            <summary>
+            gets a float array from this bundle
+            </summary>
+            <param name="key">The key that the float array was stored under</param>
+            <returns>The float array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getDoubleArray(System.String)">
+            <summary>
+            gets a double array from this bundle
+            </summary>
+            <param name="key">The key that the double array was stored under</param>
+            <returns>The double array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getBoolArrays(System.String)">
+            <summary>
+            gets a boolean array from this bundle
+            </summary>
+            <param name="key">The key that the boolean array was stored under</param>
+            <returns>The boolean array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.getCharArrays(System.String)">
+            <summary>
+            gets a character array from this bundle
+            </summary>
+            <param name="key">The key that the character array was stored under</param>
+            <returns>The character array that was stored under that key</returns>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putString(System.String,System.String)">
+            <summary>
+            Puts a string into this bundle
+            </summary>
+            <param name="key"> the key to store the string under</param>
+            <param name="value"> the string to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putInt(System.String,System.Int32)">
+            <summary>
+            Puts a integer into this bundle
+            </summary>
+            <param name="key"> the key to store the integer under</param>
+            <param name="value"> the integer to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putLong(System.String,System.Int64)">
+            <summary>
+            Puts a long into this bundle
+            </summary>
+            <param name="key"> the key to store the long under</param>
+            <param name="value"> the long to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putFloat(System.String,System.Single)">
+            <summary>
+            Puts a float into this bundle
+            </summary>
+            <param name="key"> the key to store the float under</param>
+            <param name="value"> the float to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putDouble(System.String,System.Double)">
+            <summary>
+            Puts a double into this bundle
+            </summary>
+            <param name="key"> the key to store the double under</param>
+            <param name="value"> the double to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putBool(System.String,System.Boolean)">
+            <summary>
+            Puts a boolean into this bundle
+            </summary>
+            <param name="key"> the key to store the boolean under</param>
+            <param name="value"> the boolean to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putChar(System.String,System.Char)">
+            <summary>
+            Puts a character into this bundle
+            </summary>
+            <param name="key"> the key to store the character under</param>
+            <param name="value"> the character to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putStringArray(System.String,System.String[])">
+            <summary>
+            Puts a string array into this bundle
+            </summary>
+            <param name="key"> the key to store the string array under</param>
+            <param name="value"> the string array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putIntArray(System.String,System.Int32[])">
+            <summary>
+            Puts a integer array into this bundle
+            </summary>
+            <param name="key"> the key to store the integer array under</param>
+            <param name="value"> the integer array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putLongArray(System.String,System.Int64[])">
+            <summary>
+            Puts a long array into this bundle
+            </summary>
+            <param name="key"> the key to store the long array under</param>
+            <param name="value"> the long array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putFloatArray(System.String,System.Single[])">
+            <summary>
+            Puts a float array into this bundle
+            </summary>
+            <param name="key"> the key to store the float array under</param>
+            <param name="value"> the float array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putDoubleArray(System.String,System.Double[])">
+            <summary>
+            Puts a double array into this bundle
+            </summary>
+            <param name="key"> the key to store the double array under</param>
+            <param name="value"> the double array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putBoolArray(System.String,System.Boolean[])">
+            <summary>
+            Puts a boolean array into this bundle
+            </summary>
+            <param name="key"> the key to store the boolean array under</param>
+            <param name="value"> the boolean array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.putCharArray(System.String,System.Char[])">
+            <summary>
+            Puts a character array into this bundle
+            </summary>
+            <param name="key"> the key to store the charcter array under</param>
+            <param name="value"> the character array to store in the bundle</param>
+        </member>
+        <member name="M:Bundle_Library.Bundle.op_Addition(Bundle_Library.Bundle,Bundle_Library.Bundle)">
+            <summary>
+            Custom overload of the binary plus operator which allows two bundle structures to be merged
+            </summary>
+            <param name="lhs">The first bundle to merge</param>
+            <param name="rhs">the second bundle to merge</param>
+            <returns> The result of the tw0 bundles once merged. 
+            Or NULL if one of the input bundles was NULL</returns>
+        </member>
+        <member name="T:Bundle_Library.InvalidBundleException">
+            <summary>
+            This class represents an exception which is thrown when an invalid bundle has been used for a pack unpack operation
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.InvalidBundleException.#ctor">
+            <summary>
+            Standard Constructor
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.InvalidBundleException.#ctor(System.String)">
+            <summary>
+            Contructor which takes a message 
+            </summary>
+            <param name="Message">The message to display when the exception is thrown</param>
+        </member>
+        <member name="P:Bundle_Library.InvalidBundleException.Message">
+            <summary>
+            The default message displayed when the exception is thrown. 
+            This message is displayed if no message was passed in the constructor
+            </summary>
+        </member>
+        <member name="T:Bundle_Library.InvalidKeyException">
+            <summary>
+            This class represents an exception which is thrown when the key was not found within the bundle
+            </summary>
+        </member>
+        <member name="F:Bundle_Library.InvalidKeyException.key">
+            <summary>
+            The passed key
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.InvalidKeyException.#ctor">
+            <summary>
+            Standard Constructor
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.InvalidKeyException.#ctor(System.String)">
+            <summary>
+            Contructor which takes a message 
+            </summary>
+            <param name="Message">The message to display when the exception is thrown</param>
+        </member>
+        <member name="P:Bundle_Library.InvalidKeyException.Message">
+            <summary>
+            The default message displayed when the exception is thrown. 
+            This message is displayed if no message was passed in the constructor
+            </summary>
+        </member>
+    </members>
+</doc>

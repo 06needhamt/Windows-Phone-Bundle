@@ -1,3 +1,4 @@
+D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.XML
 D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.dll
 D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.pdb
 D:\GitHub\Windows-Phone-Bundle\Bundle\bin\Debug\Bundle.pri

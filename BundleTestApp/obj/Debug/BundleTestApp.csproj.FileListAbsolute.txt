@@ -1,3 +1,4 @@
+D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\BundleTestApp.XML
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\App.xbf
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\MainPage.xbf
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\BundleTestApp.xr.xml
@@ -8,6 +9,7 @@ D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\AppxManifest.xml
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\BundleTestApp.build.appxrecipe
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\Bundle.dll
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\Bundle.pdb
+D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\Bundle.xml
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\bin\Debug\Bundle.pri
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\obj\Debug\BundleTestApp.csprojResolveAssemblyReference.cache
 D:\GitHub\Windows-Phone-Bundle\BundleTestApp\obj\Debug\App.g.i.cs

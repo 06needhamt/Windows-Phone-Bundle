@@ -1,2 +1,0 @@
-D:\GitHub\Windows-Phone-Bundle\Bundle\Bundle.csproj;neutral
-D:\GitHub\Windows-Phone-Bundle\BundleTestApp\BundleTestApp.csproj;neutral

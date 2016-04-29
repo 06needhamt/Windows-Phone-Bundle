@@ -10,27 +10,6 @@
             objects within a bundle can be accessed using the key they were stored under.
             </summary>
         </member>
-        <member name="T:Bundle_Library.IBundleable">
-            <summary>
-            This interface allows objects to be packed in bundles. 
-            Any object you want to pack in a bundle must implement this interface
-            </summary>
-        </member>
-        <member name="M:Bundle_Library.IBundleable.packObject(System.String,Bundle_Library.Bundle)">
-            <summary>
-            Pack this object into a bundle
-            </summary>
-            <param name="key">the key that it will be stored with in the bundle</param>
-            <param name="B"> The bundle to pack it in</param>
-        </member>
-        <member name="M:Bundle_Library.IBundleable.unpackOoject(System.String,Bundle_Library.Bundle)">
-            <summary>
-            Unpack this object from the bundle
-            </summary>
-            <param name="key">the key that it was stored with in the bundle</param>
-            <param name="B">The bundle that it is packed in</param>
-            <returns> the unpacked object from the bundle</returns>
-        </member>
         <member name="F:Bundle_Library.Bundle.EMPTY">
             <summary>
             An empty bundle used to check if a bundle is empty
@@ -374,6 +353,27 @@
             <param name="rhs">the second bundle to merge</param>
             <returns> The result of the tw0 bundles once merged. 
             Or NULL if one of the input bundles was NULL</returns>
+        </member>
+        <member name="T:Bundle_Library.IBundleable">
+            <summary>
+            This interface allows objects to be packed in bundles. 
+            Any object you want to pack in a bundle must implement this interface
+            </summary>
+        </member>
+        <member name="M:Bundle_Library.IBundleable.packObject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Pack this object into a bundle
+            </summary>
+            <param name="key">the key that it will be stored with in the bundle</param>
+            <param name="B"> The bundle to pack it in</param>
+        </member>
+        <member name="M:Bundle_Library.IBundleable.unpackOoject(System.String,Bundle_Library.Bundle)">
+            <summary>
+            Unpack this object from the bundle
+            </summary>
+            <param name="key">the key that it was stored with in the bundle</param>
+            <param name="B">The bundle that it is packed in</param>
+            <returns> the unpacked object from the bundle</returns>
         </member>
         <member name="T:Bundle_Library.InvalidBundleException">
             <summary>
